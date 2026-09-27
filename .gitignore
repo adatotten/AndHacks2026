@@ -47,3 +47,11 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+.gitattributes
+clean.posts2023
+jobposts.clean
+content/.gitattributes
+content/data job posts.csv
+content/industries.csv
+content/postings.csv
+LaTeX/images/JumpingIntoTheAir.png

@@ -1,0 +1,23 @@
+# Fdb version 4
+["pdflatex"] 1790469613.97625 "c:/Users/Pie/ProgSpace/WilliamAndMary/AndHacks2026/LaTeX/main.tex" "main.pdf" "main" 1790469614.83258 2
+  "c:/Users/Pie/ProgSpace/WilliamAndMary/AndHacks2026/LaTeX/main.tex" 1790469611 819 d4fab0b497ec4147201180a3648b3b88 ""
+  "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1756918018 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1756912599 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
+  "c:/texlive/2025/texmf-dist/tex/latex/base/article.cls" 1756921721 20144 b966087dda3b194755eb460d32e2ef75 ""
+  "c:/texlive/2025/texmf-dist/tex/latex/base/size11.clo" 1756921721 8464 f339f4d5391fbe0425b2d94c90e6819e ""
+  "c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1756920012 1224 978390e9c2234eab29404bc21b268d1e ""
+  "c:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def" 1756920015 19440 9da9dcbb27470349a580fca7372d454b ""
+  "c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty" 1756920005 18363 69bb4f5538964bfea50d1e6d89cbe69f ""
+  "c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty" 1756920005 8118 43b99e52946c33a23f5f43b52d5cc5ec ""
+  "c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty" 1756920005 2671 d9941f4bf4750e9b0603c9a2ec54693b ""
+  "c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty" 1756920005 4023 e66acf578d6b564c4670fb57ff336a7a ""
+  "c:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1756909560 42213 4e2ca030e8e2640502016e9e45868dcb ""
+  "c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1756931812 3605820 297dc73dc026ca32d7fe5d22a1d985b5 ""
+  "c:/texlive/2025/texmf.cnf" 1756931357 713 e69b156964470283e0530f5060668171 ""
+  "main.aux" 1790469605 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.tex" 1790469611 819 d4fab0b497ec4147201180a3648b3b88 ""
+  (generated)
+  "main.aux"
+  "main.log"
+  "main.pdf"
+  (rewritten before read)
