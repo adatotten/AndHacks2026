@@ -50,6 +50,8 @@ rsconnect/
 .gitattributes
 clean.posts2023
 jobposts.clean
+clean.posts2023.csv
+jobposts.clean.csv
 content/.gitattributes
 content/data job posts.csv
 content/industries.csv

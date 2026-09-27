@@ -1,9 +1,18 @@
-\documentclass[11pt]{article}
+\documentclass[16pt]{article}
 \usepackage{graphicx}
+\usepackage{abstract}
+\usepackage{hyperref}
 \graphicspath{ {./images/} }
+\renewcommand{\abstractnamefont}{\normalfont\Large\bfseries} 
 
 
-\title{\textbf{MAXIMUM FEMININITY}}
+\textwidth 6.5in
+\textheight 9in
+\oddsidemargin -0.0in
+\topmargin -0.0in
+\parindent 16pt
+
+\title{\textbf{Apply Gender Here}}
 \author{\textbf{Sophia Serice, Ada Totten}}
 \date{September 27, 2026}
 
@@ -14,7 +23,137 @@
 
 
 \pagebreak
-\section{Introduction}
+% \section{Introduction}
+\begin{abstract}
+    \large
+    We hypothesized that there would be some correlation between gendered—based on the APA's list of gendered terms—language
+    and industry advertisements, and how that sentiment changes over time. Through analysis of job
+    advertisements 2004-2015 
+    (\href{https://www.kaggle.com/datasets/madhab/jobposts/data}{Online Job Postings}) 
+    and 2023-2024 
+    (\href{https://www.kaggle.com/datasets/madhab/jobposts/data}{LinkedIn Job Postings (2023 - 2024})
+    ), pulled from free open source data on Kaggle. Through analysis of this data, we have 
+    concluded that there is a relationship between both job industry, gendered language in job
+    advertizements and that this has varied over time. For this paper we used the R programming language
+    in conjunction with the Tidyverse library as we have previous experience using those in a linguistic context.
+    Possible further explorations could examine
+    more historical data. 
+\end{abstract}
+
+\pagebreak
+\section{Data}
+% \begin{center}
+%     \includegraphics[width=3.25in]{JumpingIntoTheAir}
+% \end{center}
+% \begin{figure}[h]
+%     \caption{}
+%     \centering
+    
+% \end{figure}
+
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{Unknown.png}
+    \includegraphics[width=0.5\textwidth]{Unknown-2.png}  
+\end{center}
+
+\pagebreak
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{Unknown-3.png}
+    \includegraphics[width=0.5\textwidth]{Unknown-4.png}
+\end{center}
+
+\pagebreak
+\begin{center}
+    \includegraphics[width=0.75\textwidth]{Unknown-5.png}
+\end{center}
+
+\pagebreak
+\section{Conclusions}
+
+\pagebreak
+\section{Production \& Code}
+
+\large \textbf{Loading data from .csv files:}
+\tiny
+\begin{verbatim}
+    library(tidyverse)
+    options(tidyverse.quiet = TRUE)
+
+    data_jobposts <- read_csv("content/data job posts.csv")
+    posts2023_4 <- read.csv("content/postings.csv")
+    industries <- read_csv("content/industries.csv")
+\end{verbatim}
+
+\noindent \large \textbf{Cleaning data:} \\
+\indent The data had a substantial amount of extaneous information outside of the scope of
+this project so we had to excise unnecessary data to make the code more
+comprehensible.
+\tiny
+\begin{verbatim}
+jobposts.clean <- data_jobposts %>% 
+    select(-c(Duration, StartDate, Audience, Eligibility, Term, AnnouncementCode, Company, IT, Month, Attach, AboutC, Notes, Deadline, 
+              OpeningDate, ApplicationP, Salary, RequiredQual, JobRequirment))
+
+
+clean.posts2023 <- posts2023_4 %>% 
+    select(-c(max_salary, pay_period, location, company_id, views, med_salary, skills_desc, listed_time, posting_domain, sponsored, work_type,
+              currency, compensation_type, normalized_salary, zip_code, fips, min_salary, applies, original_listed_time, remote_allowed,
+              application_url, application_type, expiry, closed_time, formatted_experience_level, job_posting_url, formatted_work_type))
+\end{verbatim}
+
+\noindent \large \textbf{Cleaning data:} \\
+\indent We then stored the APA's gendered words in two vectors.
+\tiny
+\begin{verbatim}
+masc_words <- c("active", "adventurous", "aggressive", "ambitious", "analyitic", "athletic", "autonomous", "boast",
+                "challenger", "challenging", "competent", "confident", "couragous", "decide", "decisive", "decision",
+                "determination", "dominant", "domination", "force", "forceful", "greedy", "headstrong", "hierarchy",
+                "heirarchical", "hostile", "hostility", "impulsive", "independence", "independant", "individual",
+                "individualistic", "intellectual", "intellect", "lead", "leader", "leading", "logic", "masculine",
+                "objective", "opinion", "opinionated", "outspoken", "persist", "principle", "reckless", "stubborn",
+                "superior", "self-confident", "self-confidence", "self-sufficient", "self-sufficience", "self-reliant",
+                "self-reliance")
+
+fem_words  <- c("affectionate","child", "childlike", "childish", "childhood", "cheerful", "cheer", "commit", "committed",
+                "communal", "compassion", "compassionate", "connect", "connected", "considerate", "cooporative", "cooporate",
+                "dependable", "depend", "dependant", "emotional", "emotion", "empathetic", "empathy", "empath", "feminine",
+                "flatterable", "gentle", "honest", "interpersonal", "interpersonally", "interdependent", "interdependence", "interdependently",
+                "kind", "kinship", "loyal", "loyalty", "modesty", "modest", "nag", "nurture", "nurturing", "pleasant", "pleasantly",
+                "polite", "quiet", "quietly", "quietness", "responsive", "responsiveness", "sensitivity", "sensitive", "sensitiveness",
+                "submissive", "support", "supportive", "supporting", "sympathetic", "sympathy", "sympath", "tender", "tenderness",
+                "together", "togetherness", "trust", "trusting", "understanding", "understand", "warm", "warmness", "whining", "yield", "yielding")
+\end{verbatim}
+
+\noindent \large \textbf{Analysis and plotting:} \\
+\indent Lastly, we generated graphs using assorted ggplot functions such as the ones provided (after performing some small operations to make the data
+more easily parsable via code).
+\tiny
+\begin{verbatim}
+jobposts.masc.plot <- ggplot(plot, aes(x = Year, y = mu)) +
+  geom_line(color = "orange", size = 1) +
+  geom_point(color = "red", size = 2) +
+  labs(title = "masculine average over time", x = "Year", y = "masculine word rate") +
+  theme_grey()
+
+jobposts.masc.plot
+
+
+jobposts.clean %>% group_by(Year) %>%
+  summarize(mu=mean(fem_rate, na.rm = TRUE)) -> plot2
+
+
+jobposts.fem.plot <- ggplot(plot2, aes(x = Year, y = mu)) +
+  geom_line(color = "blue", size = 1) +
+  geom_point(color = "red", size = 2) +
+  labs(title = "feminine average over time", x = "Year", y = "feminine word rate") +
+  theme_grey()
+\end{verbatim}
+
+
+
+
+
+
 
 \end{document}
 
@@ -62,6 +201,6 @@
 
 % \end{center}
 
-% \includegraphics[width=\textwidth]{JumpingIntoTheAir}
+% 
 
 % \end{document}
