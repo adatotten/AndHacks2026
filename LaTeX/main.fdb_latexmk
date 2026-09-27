@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1790522401.43422 "c:/Users/Pie/ProgSpace/WilliamAndMary/AndHacks2026/AndHacks2026/LaTeX/main.tex" "main.pdf" "main" 1790522402.17536 0
-  "c:/Users/Pie/ProgSpace/WilliamAndMary/AndHacks2026/AndHacks2026/LaTeX/main.tex" 1790522400 7227 fd9a490ec34533509aa915be95e06b98 ""
+["pdflatex"] 1790522719.74289 "c:/Users/Pie/ProgSpace/WilliamAndMary/AndHacks2026/AndHacks2026/LaTeX/main.tex" "main.pdf" "main" 1790522720.55386 0
+  "c:/Users/Pie/ProgSpace/WilliamAndMary/AndHacks2026/AndHacks2026/LaTeX/main.tex" 1790522719 7782 0a29b1ddcca5fe3d384a2f7a969e1726 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1756918018 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1756912599 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1756912599 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -65,9 +65,9 @@
   "images/Unknown-4.png" 1790521571 70143 ec4c1032fb3c250f553005a2c5208cb6 ""
   "images/Unknown-5.png" 1790521743 83698 2041ba7634ba3889757b7f961b74fced ""
   "images/Unknown.png" 1790521566 42550 0a976ef54fc3850e6025e8aa0f25cf4e ""
-  "main.aux" 1790522402 486 4f896d4628c86b95afbfc78207e8a6d0 "pdflatex"
-  "main.out" 1790522402 298 50c45b0f785c990e3d6436abcb689581 "pdflatex"
-  "main.tex" 1790522400 7227 fd9a490ec34533509aa915be95e06b98 ""
+  "main.aux" 1790522720 486 4f896d4628c86b95afbfc78207e8a6d0 "pdflatex"
+  "main.out" 1790522720 298 50c45b0f785c990e3d6436abcb689581 "pdflatex"
+  "main.tex" 1790522719 7782 0a29b1ddcca5fe3d384a2f7a969e1726 ""
   (generated)
   "main.aux"
   "main.log"
